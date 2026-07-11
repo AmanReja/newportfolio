@@ -17,7 +17,6 @@ export const ProjectChipPopup = ({ children }) => {
   const triggerRef = useRef(null);
   const timeoutRef = useRef(null);
 
-  // Check screen size
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth < 768);
     checkMobile();

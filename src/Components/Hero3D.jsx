@@ -8,6 +8,7 @@ import {RobotStatCard} from "../Components/RobotStatCard"
 import { ProjectChipPopup } from "./ProjectChipPopup";
 import Contact from "./Contact";
 
+
 export default function Hero3D() {
   const textRef = useRef();
   const badgeRef = useRef();

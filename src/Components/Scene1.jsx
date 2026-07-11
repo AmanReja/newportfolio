@@ -1,8 +1,11 @@
 import { useRef, useEffect, useState } from "react";
 import { useFrame, useThree } from "@react-three/fiber";
 import { useGLTF } from "@react-three/drei";
+import { useIsMobile } from "../helpers/mobile";
 
 export default function Scene1() {
+
+  const ismobile = useIsMobile() 
   const modelRef = useRef();
   const { scene } = useGLTF("/spider.glb");
   const [scrollY, setScrollY] = useState(0);
@@ -31,7 +34,7 @@ useFrame((state) => {
 
   const t = state.clock.getElapsedTime();
 
-  const baseY = -1; // 👈 move character down (try -3, -4, etc.)
+  const baseY = -1; 
 
   const targetPosY =
     baseY - scrollY * 4 + Math.sin(t * 0.4) * 0.06;
@@ -51,8 +54,8 @@ useFrame((state) => {
     <primitive
       ref={modelRef}
       object={scene}
-      scale={2.6}           // ← bigger, like your screenshot
-      position={[1.8, 0, 0]}  // ← shifted right, slightly down so it bleeds top
+      scale={ismobile?3:2.6}           // ← bigger, like your screenshot
+      position={ismobile?[0,0,0]:[1.8, 0, 0]}  // ← shifted right, slightly down so it bleeds top
     />
   );
 }
