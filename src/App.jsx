@@ -4,6 +4,7 @@ import Contact from "./Components/Contact";
 import Navbar from "./Components/Navbar";
 
 import About from "./Components/About";
+import SkillCard from "./Components/SkillCard";
 
 export default function App() {
   return (
@@ -36,8 +37,10 @@ export default function App() {
       </section>
 
       {/* <Projects /> */}
+      <SkillCard/>
        <About/>
       <Contact />
+
      
     </div>
   );

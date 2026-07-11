@@ -124,7 +124,8 @@ export default function Hero3D() {
     </h1>
   </div>
  <div className="relative w-full max-w-7xl px-10">
-<button
+  <a href="tel:+919749404582">
+    <button
   className="
     group
     relative
@@ -176,6 +177,8 @@ export default function Hero3D() {
 
   <div className="absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-orange-400 to-transparent animate-pulse" />
 </button>
+  </a>
+
 
  </div>
 

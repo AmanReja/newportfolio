@@ -1,5 +1,5 @@
 import React from "react";
-import { Send, Cpu, Globe } from "lucide-react";
+import { Send, Cpu, Globe ,GitFork,Bird,Cable} from "lucide-react";
 
 export default function Contact() {
   return (
@@ -59,13 +59,14 @@ export default function Contact() {
 
             <div className="flex flex-wrap justify-center lg:justify-start gap-4">
                {[
-                 { name: "GitHub", icon: <Globe size={18}/>, link: "#" },
-                 { name: "LinkedIn", icon: <Globe size={18}/>, link: "#" },
-                 { name: "Twitter", icon: <Globe size={18}/>, link: "#" }
+                 { name: "GitHub", icon: <GitFork  size={18}/>, link: "https://github.com/AmanReja" },
+                 { name: "LinkedIn", icon: <Cable size={18}/>, link: "https://www.linkedin.com/in/aman-reja-85527b1a1/" },
+                 { name: "Twitter", icon: <Bird  size={18}/>, link: "#" }
                ].map((social) => (
                  <a
                    key={social.name}
                    href={social.link}
+                   target="_blank"
                    className="flex items-center gap-2 px-4 py-2 border border-white/10 bg-white/5 text-gray-400 hover:text-orange-500 hover:border-orange-500/50 transition-all duration-300"
                    style={{ clipPath: "polygon(0 0, 100% 0, 100% 70%, 85% 100%, 0 100%)" }}
                  >
@@ -124,7 +125,7 @@ export default function Contact() {
           </p>
         </div>
         <p className="text-[10px] font-mono text-white tracking-[0.2em] uppercase text-center">
-          &copy; {new Date().getFullYear()} Aman_Dev // Design_Auth: Industrial_Core
+          &copy; {new Date().getFullYear()} Aman_Reja // Design_Auth: Industrial_Core
         </p>
       </footer>
     </section>

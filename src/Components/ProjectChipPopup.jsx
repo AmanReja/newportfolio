@@ -4,10 +4,10 @@ import { Cpu, ExternalLink, Smartphone, MessageSquare, MapPin, Book, Heart, X } 
 
 const documents = [
   { id: "01", title: "Student Attendance", description: "React Native App", icon: <Smartphone size={14} />, link: "#" },
-  { id: "02", title: "Realtime Chat", description: "Socket.io + RN", icon: <MessageSquare size={14} />, link: "#" },
-  { id: "03", title: "Position Tracker", description: "MERN + Socket.io", icon: <MapPin size={14} />, link: "#" },
-  { id: "04", title: "Online Book Sale", description: "MERN Stack", icon: <Book size={14} />, link: "#" },
-  { id: "05", title: "Minder Dating", description: "React Native", icon: <Heart size={14} />, link: "#" },
+  { id: "02", title: "Realtime Chat", description: "Socket.io + RN", icon: <MessageSquare size={14} />, link: "https://github.com/AmanReja/chatapp" },
+  { id: "03", title: "Position Tracker", description: "MERN + Socket.io", icon: <MapPin size={14} />, link: "https://github.com/AmanReja/tracker-frontend" },
+  { id: "04", title: "Online Book Sale", description: "MERN Stack", icon: <Book size={14} />, link: "https://github.com/AmanReja/front-book" },
+  { id: "05", title: "Minder Dating", description: "React Native", icon: <Heart size={14} />, link: "https://github.com/AmanReja/tinder-backend" },
 ];
 
 export const ProjectChipPopup = ({ children }) => {

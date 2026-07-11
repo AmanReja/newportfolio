@@ -6,7 +6,7 @@ const Navbar = () => {
 
   const navLinks = [
     { name: "Home", href: "#" },
-    { name: "Projects", href: "#" },
+    { name: "Skills", href: "#skills" },
     { name: "About", href: "#about" },
     { name: "Contact", href: "#contact" },
   ];
@@ -23,7 +23,7 @@ const Navbar = () => {
             <div className="absolute inset-0 bg-orange-500 blur-md opacity-20 group-hover:opacity-50 transition-opacity" />
           </div>
           <h1 className="text-xl font-black tracking-tighter text-white uppercase">
-            Aman<span className="text-orange-500">.dev</span>
+            Aman<span className="text-orange-500">.Reja</span>
           </h1>
         </div>
 
